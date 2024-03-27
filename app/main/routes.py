@@ -1,7 +1,6 @@
 from flask import session, redirect, url_for, render_template, request
 from . import main
 from .forms import LoginForm
-from flask_kerberos import requires_authentication
 
 
 @main.route('/', methods=['GET', 'POST'])
@@ -19,7 +18,6 @@ def index():
 
 
 @main.route('/chat')
-@requires_authentication
 def chat():
     """Chat room. The user's name and room must be stored in
     the session."""

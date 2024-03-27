@@ -23,5 +23,5 @@ pip install -r requirements.txt
 ### run the app
 
 ```
-flask run
+python chat.py
 ```
